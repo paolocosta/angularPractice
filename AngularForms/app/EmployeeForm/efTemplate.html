@@ -1,0 +1,65 @@
+﻿<form role="form" class="form-horizontal" ng-submit="submitForm()">
+    <fieldset>
+        <legend>Employee</legend>
+        <div class="form-group">
+            <label for="fullName" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input ng-model="employee.fullName" type="text" name="fullName" id="fullName" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes" class="col-sm-3 control-label">Notes</label>
+            <div class="col-sm-9">
+                <textarea ng-model="employee.notes" name="notes" id="notes" rows="5" cols="40" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="department" class="col-sm-3 control-label">Department</label>
+            <div class="col-sm-9">
+                <select ng-options="dept for dept in departments" ng-model="employee.department" name="department" id="department" class="form-control">
+
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-3"></div>
+
+
+            <div class="col-sm-9">
+                <span><b>Perks</b></span>
+
+                <div class="checkbox">
+                    <label><input ng-model="employee.perkCar" type="checkbox" value="perkCar" />Company car </label>
+                </div>
+                <div class="checkbox">
+                    <label><input ng-model="employee.perkStok" type="checkbox" value="perkStok" />Personal car</label>
+                </div>
+                <div class="checkbox">
+                    <label><input ng-model="employee.perkSixWeeks" type="checkbox" value="perkSixWeeks" />Six weeks car</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-9">
+                <span><b>Payroll type</b></span><br />
+
+                <div class="radio">
+                    <label><input ng-model="employee.payrollType" name="payrollType" type="radio" value="none" />None </label>
+                </div>
+                <div class="radio">
+                    <label><input ng-model="employee.payrollType" name="payrollType" type="radio" value="perkStok" />12 months</label>
+                </div>
+                <div class="radio">
+                    <label><input ng-model="employee.payrollType" name="payrollType" type="radio" value="perkSixWeeks" />13 months</label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+        
+    <input type="submit" class="btn btn-primary col-sm-offset-3" />
+        
+</form>
