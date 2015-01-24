@@ -4,12 +4,17 @@
     <title></title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
     <script src="app/AngularFormsApp.js"></script>
     <script src="app/EmployeeForm/efController.js"></script>
     <script src="app/EmployeeForm/efDirectives.js"></script>
-    <script src="app/EmployeeForm/efService.js"></script>
+    <script src="app/DataService.js"></script>
 </head>
-<body ng-controller="efController" class="container">  <!-- container mette tutto al centro-->
-    <employee-form></employee-form>
+<body class="container">
+    <!-- container mette tutto al centro-->
+    <h1>Start page</h1>
+    <div ng-view>
+        
+    </div>
 </body>
 </html>

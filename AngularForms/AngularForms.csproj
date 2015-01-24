@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Home.html" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
@@ -81,7 +82,7 @@
     <Content Include="app\AngularFormsApp.js" />
     <Content Include="app\EmployeeForm\efController.js" />
     <Content Include="app\EmployeeForm\efDirectives.js" />
-    <Content Include="app\EmployeeForm\efService.js" />
+    <Content Include="app\DataService.js" />
     <Content Include="app\EmployeeForm\efTemplate.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
